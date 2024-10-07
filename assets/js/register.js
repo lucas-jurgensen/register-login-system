@@ -62,7 +62,7 @@ registerButton.addEventListener("click", () => {
 
     clearInputs();
     alert("Usuário registrado com sucesso!");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 });
 
 togglePassword.addEventListener("click", () => {
