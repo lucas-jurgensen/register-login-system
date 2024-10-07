@@ -1,0 +1,150 @@
+:root {
+    --white: #fafaff;
+    --dark-blue: #30343f;
+    --cream: #e4d9ff;
+    --bgColor: var(--white);
+    --fontColor: var(--dark-blue);
+    --borderColor: #ccc;
+    --linkColor: #0066cc;
+    --buttonBgColor: #e4d9ff;
+}
+
+.light-theme {
+    --bgColor: var(--white);
+    --fontColor: var(--dark-blue);
+    --borderColor: #ccc;
+    --linkcolor: #0066cc;
+    --buttonBgColor: #e4d9ff;
+}
+
+.dark-theme {
+    --bgColor: #30343f;
+    --fontColor: #fafaff;
+    --borderColor: #fafaff;
+    --linkColor: #66ccff;
+    --buttonBgColor: #505050;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: var(--fontColor);
+}
+
+body {
+    background-color: var(--bgColor);
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.main-container {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: row;
+}
+
+.main-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    flex: 1;
+}
+
+.main-left_title {
+    margin-left: 100px;
+}
+
+.main-left_title h1 {
+    font-size: 4rem;
+}
+
+.main-left_subtitle {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.main-left_subtitle h2 {
+    text-align: justify;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.main-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Toggle password style */
+.password-container {
+    position: relative;
+    width: 400px;
+}
+
+.password-container input {
+    width: 100%;
+}
+
+.password-container span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: all;
+}
+
+input {
+    background-color: transparent;
+    font-size: 1.1rem;
+    width: 400px;
+    padding: 6px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--borderColor);
+}
+
+button {
+    border: 2px solid var(--borderColor);
+    border-radius: 8px;
+    background-color: transparent;
+    font-size: 1.1rem;
+    padding: 8px 62px;
+}
+
+button:hover {
+    color: #222;
+    transition: 0.2s ease;
+    background-color: var(--borderColor);
+}
+
+a {
+    color: var(--linkColor);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.account {
+    margin-top: 20px;
+}
