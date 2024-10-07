@@ -23,7 +23,7 @@ Este projeto está licenciado sob a MIT License.
 
 ## Como Usar
 
-- Vocẽ pode entrar pelo github pages, ou:
+- Você pode entrar pelo github pages, ou:
 
 1. **Clone o repositório**:
 ```bash
